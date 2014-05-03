@@ -8,11 +8,9 @@ SetEnv SITE_THEME "cyborg"
 
 RewriteEngine On
 RewriteCond %{REQUEST_URI} HEADER.md$
-RewriteCond HEADER.md !-f
-RewriteRule HEADER.md /autoindex_strapdown/empty.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule HEADER.md /autoindex_strapdown/empty.html [L]
 
 RewriteCond %{REQUEST_URI} README.md$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule README.md /autoindex_strapdown/empty.html [L]
-
-#SSIErrorMsg "<!-- Error -->"
