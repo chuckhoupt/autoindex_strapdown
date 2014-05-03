@@ -1,11 +1,23 @@
-Options +Indexes +FollowSymLinks
-IndexOptions FancyIndexing HTMLTable SuppressHTMLPreamble SuppressRules SuppressIcon ScanHTMLTitles NameWidth=* DescriptionWidth=*
+# Autoindex-Strapdown Configuration
+
+SetEnv SITE_NAME "Demo"
+SetEnv SITE_THEME "united"
+
+# Apache Autoindex Directives
+
+Options +Indexes
+IndexOptions FancyIndexing HTMLTable SuppressRules SuppressIcon ScanHTMLTitles NameWidth=* DescriptionWidth=*
+
+# Autoindex-Strapdown Directives
+
+IndexOptions SuppressHTMLPreamble
+
 HeaderName /autoindex_strapdown/header.shtml
 ReadmeName /autoindex_strapdown/footer.shtml
 
-SetEnv SITE_NAME "Demo"
-SetEnv SITE_THEME "cyborg"
+# To prevent 404s, rewrite missing HEADER/README.md to an empty file
 
+Options +FollowSymLinks
 RewriteEngine On
 RewriteCond %{REQUEST_URI} HEADER.md$
 RewriteCond %{REQUEST_FILENAME} !-f
