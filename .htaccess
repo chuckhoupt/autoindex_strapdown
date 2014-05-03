@@ -1,7 +1,8 @@
 # Autoindex-Strapdown Configuration
 
-SetEnv SITE_NAME "Autoindex-Strapdown"
-SetEnv SITE_THEME "bootstrap"
+# Use SetEnvIf here so that SetEnv in demo can override.
+SetEnvIf Request_URI "/" SITE_NAME=Autoindex-Strapdown
+SetEnvIf Request_URI "/" SITE_THEME=bootstrap
 
 # Apache Autoindex Directives
 
