@@ -28,4 +28,4 @@ Apache mod_index back to Apache.
 [Autoindex-Strapdown]: http://autoindex-strapdown.habilis.net
 [mod_autoindex]: http://httpd.apache.org/docs/2.2/mod/mod_autoindex.html
 [Markdown]: https://daringfireball.net/projects/markdown/
-[Strapsdown]: http://strapdownjs.com
+[Strapdown]: http://strapdownjs.com
