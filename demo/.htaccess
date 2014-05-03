@@ -3,7 +3,7 @@ IndexOptions FancyIndexing HTMLTable SuppressHTMLPreamble SuppressRules Suppress
 HeaderName /autoindex_strapdown/header.shtml
 ReadmeName /autoindex_strapdown/footer.shtml
 
-SetEnv SITE_NAME " - BC Cortex"
+SetEnv SITE_NAME "Demo"
 SetEnv SITE_THEME "cyborg"
 
 RewriteEngine On
