@@ -1,0 +1,3 @@
+# Auto-Index Markdown
+
+Rubarb, Rubarb, ...

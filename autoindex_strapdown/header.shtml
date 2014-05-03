@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index of <!--#echo var="SCRIPT_URL" --><!--#echo var="SITE_NAME" --></title>
+</head>
+<body>
+
+<xmp theme="<!--#echo var="SITE_THEME"-->">
+<!--#include virtual="${SCRIPT_URL}HEADER.md" -->
+</xmp>

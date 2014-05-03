@@ -1,0 +1,13 @@
+#Options +Indexes
+IndexOptions FancyIndexing HTMLTable SuppressHTMLPreamble SuppressRules SuppressIcon ScanHTMLTitles NameWidth=* DescriptionWidth=*
+HeaderName /autoindex_markdown/header.shtml
+ReadmeName /autoindex_markdown/footer.shtml
+
+SetEnv SITE_NAME " - BC Cortex"
+SetEnv SITE_THEME "spacelab"
+#SetEnv SITE_THEME "cyborg"
+
+SSIErrorMsg "<!-- Error -->"
+
+# Ask DH about this?
+#SSIEnableAccess on

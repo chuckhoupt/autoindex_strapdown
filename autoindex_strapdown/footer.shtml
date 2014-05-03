@@ -1,0 +1,24 @@
+<xmp>
+<!--#include virtual="${SCRIPT_URL}README.md" -->
+</xmp>
+
+<script>
+(function(window, document) {
+	document.body.style.display = 'none';
+
+	var xmps = document.getElementsByTagName('xmp'),
+		header = xmps[0],
+		readme = xmps[1],
+		table = document.getElementsByTagName('table')[0];
+
+	var newMarkdown = header.innerHTML + table.outerHTML + "\n" + readme.innerHTML;
+	console.log(newMarkdown);
+
+	header.innerHTML = newMarkdown;
+	document.body.removeChild(table);
+	document.body.removeChild(readme);
+})(window, document);
+</script>
+<script src="/autoindex_strapdown/strapdown/strapdown.js"></script>
+</body>
+</html>
