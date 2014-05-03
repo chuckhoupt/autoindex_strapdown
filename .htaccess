@@ -1,5 +1,28 @@
-Options +Includes
-AddType text/html .shtml
-AddOutputFilter INCLUDES .shtml
-SSIAccessEnable on
-#SSILegacyExprParser on
+# Autoindex-Strapdown Configuration
+
+SetEnv SITE_NAME "Autoindex-Strapdown"
+SetEnv SITE_THEME "bootstrap"
+
+# Apache Autoindex Directives
+
+Options +Indexes
+IndexOptions FancyIndexing HTMLTable SuppressRules SuppressIcon ScanHTMLTitles NameWidth=* DescriptionWidth=*
+
+# Autoindex-Strapdown Directives
+
+IndexOptions SuppressHTMLPreamble
+
+HeaderName /autoindex_strapdown/header.shtml
+ReadmeName /autoindex_strapdown/footer.shtml
+
+# To prevent 404s, rewrite missing HEADER/README.md to an empty file
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_URI} HEADER.md$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule HEADER.md /autoindex_strapdown/empty.html [L]
+
+RewriteCond %{REQUEST_URI} README.md$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule README.md /autoindex_strapdown/empty.html [L]
