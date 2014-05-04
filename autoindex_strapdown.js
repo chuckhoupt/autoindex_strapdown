@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// will have no child elements.
 	for (var c=b.children, i=0; i < c.length; i++) {
 		var e = c[i],
-			t = (e.nodeName == 'PRE' && e.children.length == 0) ? e.innerText : e.outerHTML;
+			t = (e.nodeName == 'PRE' && e.children.length == 0) ? e.textContent : e.outerHTML;
 		xmp.innerHTML += t + '\n\n';
 	}
 	
