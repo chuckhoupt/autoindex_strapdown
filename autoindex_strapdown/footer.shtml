@@ -11,9 +11,9 @@
 	var xmps = document.getElementsByTagName('xmp'),
 		header = xmps[0],
 		readme = xmps[1],
-		index = document.getElementById('index');
+		index = document.getElementById('autoindex');
 
-	var newMarkdown = header.innerHTML + index.innerHTML + "\n" + readme.innerHTML;
+	var newMarkdown = header.innerHTML + index.outerHTML + "\n" + readme.innerHTML;
 	console.log(newMarkdown);
 
 	header.innerHTML = newMarkdown;

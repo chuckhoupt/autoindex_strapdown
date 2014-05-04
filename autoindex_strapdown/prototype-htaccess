@@ -1,13 +1,46 @@
-#Options +Indexes
-IndexOptions FancyIndexing HTMLTable SuppressHTMLPreamble SuppressRules SuppressIcon ScanHTMLTitles NameWidth=* DescriptionWidth=*
-HeaderName /autoindex_markdown/header.shtml
-ReadmeName /autoindex_markdown/footer.shtml
+# Autoindex-Strapdown Configuration
 
-SetEnv SITE_NAME " - BC Cortex"
-SetEnv SITE_THEME "spacelab"
-#SetEnv SITE_THEME "cyborg"
+SetEnv SITE_NAME "Demo"
+SetEnv SITE_THEME "united"
 
-SSIErrorMsg "<!-- Error -->"
+# Apache Autoindex Directives
 
-# Ask DH about this?
-#SSIEnableAccess on
+Options +Indexes
+IndexOptions FancyIndexing HTMLTable SuppressRules IconsAreLinks ScanHTMLTitles NameWidth=* DescriptionWidth=*
+
+# Autoindex-Strapdown Directives
+
+IndexOptions SuppressHTMLPreamble
+
+HeaderName /autoindex_strapdown/header.shtml
+ReadmeName /autoindex_strapdown/footer.shtml
+
+# To prevent 404s, rewrite missing HEADER/README.md to an empty file
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_URI} HEADER.md$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule HEADER.md /autoindex_strapdown/empty.html [L]
+
+RewriteCond %{REQUEST_URI} README.md$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule README.md /autoindex_strapdown/empty.html [L]
+
+# Icon using Bootstrap's Glyphicon set
+
+AddIcon /autoindex_strapdown/icons/blank.svg ^^BLANKICON^^
+AddIcon /autoindex_strapdown/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
+AddIcon /autoindex_strapdown/icons/glyphicon-circle-arrow-up.svg ..
+DefaultIcon /autoindex_strapdown/icons/glyphicon-file.svg
+
+AddIconByEncoding (CMP,/autoindex_strapdown/icons/glyphicon-file.svg) x-compress x-gzip
+
+AddIconByType (TXT,/autoindex_strapdown/icons/glyphicon-file.svg) text/*
+AddIconByType (IMG,/autoindex_strapdown/icons/glyphicon-picture.svg) image/*
+AddIconByType (SND,/autoindex_strapdown/icons/glyphicon-music.svg) audio/*
+AddIconByType (VID,/autoindex_strapdown/icons/glyphicon-film.svg) video/*
+
+# Override common defaults
+
+AddIcon /autoindex_strapdown/icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl .wrl.gz .vrml .vrm .iv .Z .z .tgz .gz .zip .ps .ai .eps .html .shtml .htm .pdf .txt .c .pl .py .for .dvi .uu .conf .sh .shar .csh .ksh .tcl .tex core
