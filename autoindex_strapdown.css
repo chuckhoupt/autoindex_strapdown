@@ -1,0 +1,6 @@
+/* Remove extra margin on table images in order to align index icons with text.
+   The extra margin originates in strapdown.css. */
+
+table img {
+	margin: 0;
+}
