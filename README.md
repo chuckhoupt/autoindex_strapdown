@@ -21,7 +21,7 @@ AddType text/plain .md
 HeaderName HEADER.md
 ReadmeName README.md
 IndexHeadInsert "&lt;script>conf = {theme: 'bootstrap', title: ''};&lt;/script> \
-&lt;script>document.addEventListener('DOMContentLoaded', function() { var b = document.body, xmp, strapdown; b.style.display = 'none'; if (conf.title) document.title += ' - ' + conf.title; strapdown = document.createElement('script'); strapdown.setAttribute('src', conf.strapdown ? conf.strapdown : 'http://strapdownjs.com/v/0.2/strapdown.js'); xmp = document.createElement('xmp'), xmp.setAttribute('theme', conf.theme); for (var c=b.children, i=0; i < c.length; i++) { var e = c[i], t = (e.nodeName == 'PRE' && e.children.length == 0) ? e.innerText : e.outerHTML; xmp.innerHTML += t + '\n\n'; } while (b.lastChild) { b.removeChild(b.lastChild); } b.appendChild(xmp); b.appendChild(strapdown); });&lt;/script>&lt;style>table img {margin: 0;}&lt;/style>"
+&lt;script>document.addEventListener('DOMContentLoaded', function() { var b = document.body, xmp, strapdown; b.style.display = 'none'; if (conf.title) document.title += ' - ' + conf.title; strapdown = document.createElement('script'); strapdown.setAttribute('src', conf.strapdown ? conf.strapdown : 'http://strapdownjs.com/v/0.2/strapdown.js'); xmp = document.createElement('xmp'), xmp.setAttribute('theme', conf.theme); for (var c=b.children, i=0; i < c.length; i++) { var e = c[i], t = (e.nodeName == 'PRE' && e.children.length == 0) ? e.textContent : e.outerHTML; xmp.innerHTML += t + '\n\n'; } while (b.lastChild) { b.removeChild(b.lastChild); } b.appendChild(xmp); b.appendChild(strapdown); });&lt;/script>&lt;style>table img {margin: 0;}&lt;/style>"
 </code></pre>
 
 Customize by setting the `theme` or `title` configuration parameter on the first line of
@@ -51,7 +51,6 @@ AddIconByType (TXT,/icons/glyphicon-file.svg) text/*
 AddIconByType (IMG,/icons/glyphicon-picture.svg) image/*
 AddIconByType (SND,/icons/glyphicon-music.svg) audio/*
 AddIconByType (VID,/icons/glyphicon-film.svg) video/*
-
 ```
 
 ### Background
