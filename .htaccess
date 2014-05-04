@@ -34,6 +34,7 @@ AddIcon /icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl .wrl.gz .vrml .vrm .i
 
 # Descriptions
 
+AddDescription "tl;dr: Apache, use freely" strapdown/themes/LICENSE
 AddDescription "tl;dr: MIT, use freely" LICENSE
 AddDescription "Documented master copy of code" autoindex_strapdown.js
 AddDescription "master copy of styles" autoindex_strapdown.css
