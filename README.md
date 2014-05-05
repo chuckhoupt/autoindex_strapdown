@@ -1,5 +1,5 @@
-Autoindex-Strapdown Intro
--------------------------
+Autoindex-Strapdown Read-Me
+---------------------------
 
 [Autoindex-Strapdown] enhances Apache's [mod_autoindex] directory listings with
 [Markdown] README and HEADER files rendered by [Strapdown.js]. Setup GitHub-like
@@ -46,6 +46,17 @@ the `IndexHeadInsert` directive. For example:
 
 See the list of [themes available from Strapdown.js][Strapdown.js].
 
+### Self-Hosting
+
+For simplicity, the example above is hosted at `aip.habilis.net`. To install on your
+own host, download or git-clone Autoindex-Strapdown, and adjust the htaccess directives
+to point at a local URLs for the Javascript, CSS and icons. Add the extra conf option
+`stapdown` to self-host Strapdown. I.e.:
+
+`conf = {theme: 'bootstrap', title: '', strapdown: '/sd/strapdown.js'}
+
+For a concrete example, see the [htaccess-selfhost](htaccess-selfhost) file which expects
+Autoindex-Strapdown to be installed on the host at the URL `/autoindex_strapdown/`.
 
 ### Background
 
