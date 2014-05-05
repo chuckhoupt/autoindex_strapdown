@@ -26,6 +26,10 @@ AddIconByType (VID,http://ais.habilis.net/icons/glyphicon-film.svg) video/*
 
 # ais.habilis.net Custom directives follow:
 
+# Turn off index.html rendering, so Strapdown directory is autoindexed
+
+DirectoryIndex no-such-file.html
+
 # Override common defaults on Mac OS X
 
 AddIconByEncoding (CMP,http://ais.habilis.net/icons/glyphicon-file.svg) x-compress x-gzip
@@ -33,6 +37,6 @@ AddIcon http://ais.habilis.net/icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl
 
 # Descriptions
 
-AddDescription "tl;dr: Apache, use freely" strapdown/themes/LICENSE
+AddDescription "tl;dr: Apache, use freely" strapdown/vendor/themes/LICENSE strapdown/v/0.1/themes/LICENSE strapdown/v/0.2/themes/LICENSE
 AddDescription "tl;dr: MIT, use freely" LICENSE
 AddDescription "SVG file icons" icons
