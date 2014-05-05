@@ -1,0 +1,25 @@
+# Apache Autoindex Directives
+Options Indexes
+IndexOptions FancyIndexing HTMLTable SuppressRules
+IndexOptions IconsAreLinks ScanHTMLTitles NameWidth=* DescriptionWidth=*
+
+# Autoindex-Strapdown Directives
+AddType text/plain .md
+HeaderName HEADER.md
+ReadmeName README.md
+
+# Customize by setting theme and title
+IndexHeadInsert "<script>conf = {theme: 'bootstrap', title: '', \
+strapdown: '/autoindex_strapdown/strapdown/v/0.2/strapdown.js'};</script> \
+<script src='/autoindex_strapdown/autoindex_strapdown.js'></script> \
+<link rel='stylesheet' href='/autoindex_strapdown/autoindex_strapdown.css'>"
+
+# Icons using Bootstrap's Glyphicon set
+DefaultIcon /autoindex_strapdown/icons/glyphicon-file.svg
+AddIcon /autoindex_strapdown/icons/blank.svg ^^BLANKICON^^
+AddIcon /autoindex_strapdown/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
+AddIcon /autoindex_strapdown/icons/glyphicon-circle-arrow-up.svg ..
+AddIconByType (TXT,/autoindex_strapdown/icons/glyphicon-file.svg) text/*
+AddIconByType (IMG,/autoindex_strapdown/icons/glyphicon-picture.svg) image/*
+AddIconByType (SND,/autoindex_strapdown/icons/glyphicon-music.svg) audio/*
+AddIconByType (VID,/autoindex_strapdown/icons/glyphicon-film.svg) video/*
