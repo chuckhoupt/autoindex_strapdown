@@ -53,7 +53,7 @@ own host, download or git-clone Autoindex-Strapdown, and adjust the htaccess dir
 to point at a local URLs for the Javascript, CSS and icons. Add the extra conf option
 `stapdown` to self-host Strapdown. I.e.:
 
-`conf = {theme: 'bootstrap', title: '', strapdown: '/sd/strapdown.js'}
+`conf = {theme: 'bootstrap', title: '', strapdown: '/sd/strapdown.js'}`
 
 For a concrete example, see the [htaccess-selfhost](htaccess-selfhost) file which expects
 Autoindex-Strapdown to be installed on the host at the URL `/autoindex_strapdown/`.
