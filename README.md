@@ -5,9 +5,8 @@ Autoindex-Strapdown Read-Me
 [Markdown] README and HEADER files rendered by [Strapdown.js]. Setup GitHub-like
 directory documentation with just Apache!
 
- ![Index before Autoindex-Strapdown](before.png "Before: ugly, pixilated, cramped, boring")
- **&#x276e; Before-After &#x276f;**
- ![Index after Autoindex-Strapdown](after.png "After: sleek, vectorized, spacious, lickable")
+![Before and After Autoindex-Strapdown](before-after.png "Before: ugly, pixilated, cramped, boring.
+After: sleek, vectorized, spacious, lickable.")
 
 ### Quick Start
 
