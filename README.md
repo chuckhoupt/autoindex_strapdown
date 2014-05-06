@@ -6,7 +6,7 @@ Autoindex-Strapdown Read-Me
 directory documentation with just Apache!
 
  ![Index before Autoindex-Strapdown](before.png "Before: ugly, pixilated, cramped, boring")
- **&#x276e; Before and After &#x276f; &#x276f;**
+ **&#x276e; Before-After &#x276f;**
  ![Index after Autoindex-Strapdown](after.png "After: sleek, vectorized, spacious, lickable")
 
 ### Quick Start
