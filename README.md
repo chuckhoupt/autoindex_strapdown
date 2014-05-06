@@ -5,7 +5,9 @@ Autoindex-Strapdown Read-Me
 [Markdown] README and HEADER files rendered by [Strapdown.js]. Setup GitHub-like
 directory documentation with just Apache!
 
-[Before/After Pics]
+ ![Index before Autoindex-Strapdown](before.png "Before: ugly, pixilated, cramped, boring")
+ **❮ Before and After ❯❯**
+ ![Index after Autoindex-Strapdown](after.png "After: sleek, vectorized, spacious, lickable")
 
 ### Quick Start
 
@@ -48,7 +50,7 @@ See the list of [themes available from Strapdown.js][Strapdown.js].
 
 ### Self-Hosting
 
-For simplicity, the example above is hosted at `aip.habilis.net`. To install on your
+For simplicity, the example above is hosted at `ais.habilis.net`. To install on your
 own host, download or git-clone Autoindex-Strapdown, and adjust the htaccess directives
 to point at a local URLs for the Javascript, CSS and icons. Add the extra conf option
 `stapdown` to self-host Strapdown. I.e.:
