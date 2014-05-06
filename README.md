@@ -18,7 +18,7 @@ After: sleek, vectorized, spacious, lickable.")
 
 ```
 # Apache Autoindex Directives
-Options Indexes
+Options +Indexes
 IndexOptions FancyIndexing HTMLTable SuppressRules
 IndexOptions IconsAreLinks ScanHTMLTitles NameWidth=* DescriptionWidth=*
 
