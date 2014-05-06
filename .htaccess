@@ -12,7 +12,8 @@ ReadmeName README.md
 IndexHeadInsert "\
 <script>conf = {theme: 'bootstrap', title: 'Autoindex-Strapdown'};</script> \
 <script src='http://ais.habilis.net/autoindex_strapdown.js'></script> \
-<link rel='stylesheet' href='http://ais.habilis.net/autoindex_strapdown.css'>"
+<link rel='stylesheet' href='http://ais.habilis.net/autoindex_strapdown.css'> \
+<style>#content { max-width: 50em; }</style>"
 
 # Icons using Bootstrap's Glyphicon set
 DefaultIcon http://ais.habilis.net/icons/glyphicon-file.svg
