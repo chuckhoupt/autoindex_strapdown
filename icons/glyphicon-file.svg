@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
-<svg width="16px" height="16px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<g transform="scale(0.01333333, 0.01333333)">
+<svg width="18px" height="18px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g transform="scale(0.015, 0.015)">
 	<g transform="translate(0, 1200)">
 	<g transform="scale(1, -1)">
 		<path d="M100 25v1150q0 11 7 18t18 7h475v-500h400v-675q0 -11 -7 -18t-18 -7h-850q-11 0 -18 7t-7 18zM700 800v300l300 -300h-300z" fill="grey" />
