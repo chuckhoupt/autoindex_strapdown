@@ -1,10 +1,15 @@
 Autoindex-Strapdown
 ===================
 
-**Easily add Markdown READMEs/HEADERs to Apache's directory indexes, rendered by Strapdown.js**
+_by [Chuck Houpt] (<chuck@habilis.net>)_
 
-This page is itself just an Apache index augmented by Autoindex-Strapdown.
-Consult the Read-Me below for details.
+**Easily add Markdown README/HEADERs to Apache directory indexes, rendered by [Strapdown.js]**
+
+This page is itself an example of Autoindex-Strapdown -- just an augmented Apache
+web directory listing. You are currently reading the [HEADER.md](HEADER.md) file, which is
+rendered above the directory index.
+
+See the [Read-Me](#readme) below for one-step Quick-Start and more.
 
 <a href="https://github.com/chuckhoupt/autoindex_strapdown">
 <img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000; margin: 0;"
@@ -12,3 +17,5 @@ Consult the Read-Me below for details.
      alt="Fork me on GitHub"
      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
 </a>
+
+[Chuck Houpt]: http://chuck.habilis.net
