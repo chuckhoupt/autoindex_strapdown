@@ -16,7 +16,7 @@ After: sleek, vectorized, spacious, lickable.")
 **Simply copy the following into a directory's .htaccess file -- That's All!**
 <br>Then add a README.md or HEADER.md files and enjoy.
 
-```
+```ApacheConf
 # Apache Autoindex Directives
 Options +Indexes
 IndexOptions FancyIndexing HTMLTable SuppressRules
