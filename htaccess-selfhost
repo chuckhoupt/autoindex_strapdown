@@ -2,7 +2,7 @@
 # Assumes that Autoindex-strapdown is installed on host at /autoindex_strapdown/
 
 # Apache Autoindex Directives
-Options Indexes
+Options +Indexes
 IndexOptions FancyIndexing HTMLTable SuppressRules
 IndexOptions IconsAreLinks ScanHTMLTitles NameWidth=* DescriptionWidth=*
 
