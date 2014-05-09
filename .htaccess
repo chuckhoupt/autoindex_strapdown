@@ -25,10 +25,12 @@ AddIconByType (IMG,http://ais.habilis.net/icons/glyphicon-picture.svg) image/*
 AddIconByType (SND,http://ais.habilis.net/icons/glyphicon-music.svg) audio/*
 AddIconByType (VID,http://ais.habilis.net/icons/glyphicon-film.svg) video/*
 
-# ais.habilis.net Custom directives follow:
+# ais.habilis.net Custom directives follow (note custom styles above):
+
+# Limit description to match max-width
+IndexOptions DescriptionWidth=36
 
 # Turn off index.html rendering, so Strapdown directory is autoindexed
-
 DirectoryIndex no-such-file.html
 
 # Override common defaults on Mac OS X
