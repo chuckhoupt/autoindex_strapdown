@@ -44,3 +44,7 @@ AddIcon http://ais.habilis.net/icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl
 AddDescription "tl;dr: Apache, use freely" strapdown/vendor/themes/LICENSE strapdown/v/0.1/themes/LICENSE strapdown/v/0.2/themes/LICENSE
 AddDescription "tl;dr: MIT, use freely" LICENSE
 AddDescription "SVG file icons" icons
+
+# Exclusions
+
+IndexIgnore robots.txt pic

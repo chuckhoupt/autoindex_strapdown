@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /icons
+Disallow: /pics
+Disallow: /strapdown
