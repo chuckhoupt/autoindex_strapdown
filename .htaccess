@@ -10,6 +10,7 @@ HeaderName HEADER.md
 ReadmeName README.md
 
 IndexHeadInsert "\
+<meta name='description' content='Autoindex-Strapdown: Easily add Markdown README/HEADERs to Apache directory indexes, rendered by Strapdown.js'> \
 <script>conf = {theme: 'bootstrap', title: 'Autoindex-Strapdown'};</script> \
 <script src='http://ais.habilis.net/autoindex_strapdown.js'></script> \
 <link rel='stylesheet' href='http://ais.habilis.net/autoindex_strapdown.css'> \
