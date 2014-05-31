@@ -47,4 +47,4 @@ AddDescription "SVG file icons" icons
 
 # Exclusions
 
-IndexIgnore robots.txt pic
+IndexIgnore robots.txt pic favicon.ico favicon.gif
