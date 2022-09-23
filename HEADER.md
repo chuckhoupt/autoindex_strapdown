@@ -18,4 +18,4 @@ See the [Read-Me](#readme) below for one-step Quick-Start and more.
      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
 </a>
 
-[Chuck Houpt]: http://chuck.habilis.net
+[Chuck Houpt]: https://habilis.net/chuck/

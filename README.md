@@ -29,18 +29,18 @@ ReadmeName README.md
 
 # Customize by setting theme and title
 IndexHeadInsert "<script>conf = {theme: 'bootstrap', title: ''};</script> \
-<script src='http://ais.habilis.net/autoindex_strapdown.js'></script> \
-<link rel='stylesheet' href='http://ais.habilis.net/autoindex_strapdown.css'>"
+<script src='https://ais.habilis.net/autoindex_strapdown.js'></script> \
+<link rel='stylesheet' href='https://ais.habilis.net/autoindex_strapdown.css'>"
 
 # Icons using Bootstrap's Glyphicon set
-DefaultIcon http://ais.habilis.net/icons/glyphicon-file.svg
-AddIcon http://ais.habilis.net/icons/blank.svg ^^BLANKICON^^
-AddIcon http://ais.habilis.net/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
-AddIcon http://ais.habilis.net/icons/glyphicon-circle-arrow-up.svg ..
-AddIconByType (TXT,http://ais.habilis.net/icons/glyphicon-file.svg) text/*
-AddIconByType (IMG,http://ais.habilis.net/icons/glyphicon-picture.svg) image/*
-AddIconByType (SND,http://ais.habilis.net/icons/glyphicon-music.svg) audio/*
-AddIconByType (VID,http://ais.habilis.net/icons/glyphicon-film.svg) video/*
+DefaultIcon https://ais.habilis.net/icons/glyphicon-file.svg
+AddIcon https://ais.habilis.net/icons/blank.svg ^^BLANKICON^^
+AddIcon https://ais.habilis.net/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
+AddIcon https://ais.habilis.net/icons/glyphicon-circle-arrow-up.svg ..
+AddIconByType (TXT,https://ais.habilis.net/icons/glyphicon-file.svg) text/*
+AddIconByType (IMG,https://ais.habilis.net/icons/glyphicon-picture.svg) image/*
+AddIconByType (SND,https://ais.habilis.net/icons/glyphicon-music.svg) audio/*
+AddIconByType (VID,https://ais.habilis.net/icons/glyphicon-film.svg) video/*
 ```
 
 Customize by setting the `theme` or `title` configuration parameter on the first line of
@@ -72,7 +72,7 @@ Markdown formatting -- the prefect compromise between plain text and HTML.
 In a sense, Autoindex-Strapdown is an attempt to backport GitHub's enhanced emulation of
 Apache mod_autoindex back to Apache.
 
-[Autoindex-Strapdown]: http://ais.habilis.net
-[mod_autoindex]: http://httpd.apache.org/docs/2.2/mod/mod_autoindex.html
+[Autoindex-Strapdown]: https://ais.habilis.net
+[mod_autoindex]: https://httpd.apache.org/docs/current/mod/mod_autoindex.html
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Strapdown.js]: https://github.com/arturadib/strapdown
