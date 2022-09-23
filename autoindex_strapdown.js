@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Create a script element to fetch Strapdown.js.
 	strapdown = document.createElement('script');
-	strapdown.setAttribute('src', conf.strapdown ? conf.strapdown : 'http://strapdownjs.com/v/0.2/strapdown.js');
+	strapdown.setAttribute('src', conf.strapdown ? conf.strapdown : 'https://ais.habilis.net/strapdown/v/0.2/strapdown.js');
 
 	// Create an XMP element for Strapdown.js to process.
 	xmp = document.createElement('xmp'),

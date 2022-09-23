@@ -12,19 +12,19 @@ ReadmeName README.md
 IndexHeadInsert "\
 <meta name='description' content='Autoindex-Strapdown: Easily add Markdown README/HEADERs to Apache directory indexes, rendered by Strapdown.js'> \
 <script>conf = {theme: 'bootstrap', title: 'Autoindex-Strapdown'};</script> \
-<script src='http://ais.habilis.net/autoindex_strapdown.js'></script> \
-<link rel='stylesheet' href='http://ais.habilis.net/autoindex_strapdown.css'> \
+<script src='https://ais.habilis.net/autoindex_strapdown.js'></script> \
+<link rel='stylesheet' href='https://ais.habilis.net/autoindex_strapdown.css'> \
 <style>#content { max-width: 50em; }</style>"
 
 # Icons using Bootstrap's Glyphicon set
-DefaultIcon http://ais.habilis.net/icons/glyphicon-file.svg
-AddIcon http://ais.habilis.net/icons/blank.svg ^^BLANKICON^^
-AddIcon http://ais.habilis.net/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
-AddIcon http://ais.habilis.net/icons/glyphicon-circle-arrow-up.svg ..
-AddIconByType (TXT,http://ais.habilis.net/icons/glyphicon-file.svg) text/*
-AddIconByType (IMG,http://ais.habilis.net/icons/glyphicon-picture.svg) image/*
-AddIconByType (SND,http://ais.habilis.net/icons/glyphicon-music.svg) audio/*
-AddIconByType (VID,http://ais.habilis.net/icons/glyphicon-film.svg) video/*
+DefaultIcon https://ais.habilis.net/icons/glyphicon-file.svg
+AddIcon https://ais.habilis.net/icons/blank.svg ^^BLANKICON^^
+AddIcon https://ais.habilis.net/icons/glyphicon-folder-open.svg ^^DIRECTORY^^
+AddIcon https://ais.habilis.net/icons/glyphicon-circle-arrow-up.svg ..
+AddIconByType (TXT,https://ais.habilis.net/icons/glyphicon-file.svg) text/*
+AddIconByType (IMG,https://ais.habilis.net/icons/glyphicon-picture.svg) image/*
+AddIconByType (SND,https://ais.habilis.net/icons/glyphicon-music.svg) audio/*
+AddIconByType (VID,https://ais.habilis.net/icons/glyphicon-film.svg) video/*
 
 # ais.habilis.net Custom directives follow (note custom styles above):
 
@@ -36,8 +36,8 @@ DirectoryIndex no-such-file.html
 
 # Override common defaults on Mac OS X
 
-AddIconByEncoding (CMP,http://ais.habilis.net/icons/glyphicon-file.svg) x-compress x-gzip
-AddIcon http://ais.habilis.net/icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl .wrl.gz .vrml .vrm .iv .Z .z .tgz .gz .zip .ps .ai .eps .html .shtml .htm .pdf .txt .c .pl .py .for .dvi .uu .conf .sh .shar .csh .ksh .tcl .tex core
+AddIconByEncoding (CMP,https://ais.habilis.net/icons/glyphicon-file.svg) x-compress x-gzip
+AddIcon https://ais.habilis.net/icons/glyphicon-file.svg .bin .exe .hqx .tar .wrl .wrl.gz .vrml .vrm .iv .Z .z .tgz .gz .zip .ps .ai .eps .html .shtml .htm .pdf .txt .c .pl .py .for .dvi .uu .conf .sh .shar .csh .ksh .tcl .tex core
 
 # Descriptions
 
