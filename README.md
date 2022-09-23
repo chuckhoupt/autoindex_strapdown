@@ -75,4 +75,4 @@ Apache mod_autoindex back to Apache.
 [Autoindex-Strapdown]: http://ais.habilis.net
 [mod_autoindex]: http://httpd.apache.org/docs/2.2/mod/mod_autoindex.html
 [Markdown]: https://daringfireball.net/projects/markdown/
-[Strapdown.js]: http://strapdownjs.com
+[Strapdown.js]: https://github.com/arturadib/strapdown
