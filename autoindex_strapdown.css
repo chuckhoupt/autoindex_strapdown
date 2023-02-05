@@ -4,3 +4,26 @@
 table img {
 	margin: 0;
 }
+
+/* Add extra Ascending/Descending arrows to visually help sortorder */
+
+a[href$="A"]:after, a[href$="D"]:after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  padding: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1em 1em;
+  height: 1em;
+  vertical-align: middle;
+  visibility: hidden;
+}
+a[href$="D"]:after {
+  transform: rotate(180deg);
+  visibility: visible;
+}
+a[href$="A"]:hover:after {
+  visibility: visible;
+}
