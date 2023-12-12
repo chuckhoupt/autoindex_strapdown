@@ -52,10 +52,15 @@ See the list of [themes available from Strapdown.js][Strapdown.js].
 
 ### Self-Hosting
 
-For simplicity, the example above is hosted at `ais.habilis.net`. To install on your
-own host, download or git-clone Autoindex-Strapdown, and adjust the htaccess directives
-to point at local URLs for the Javascript, CSS and icons. Add the extra conf option
-`strapdown` to self-host Strapdown. I.e.:
+For simplicity, the example above uses assets hosted at `ais.habilis.net`. To install on your
+own host, git-clone Autoindex-Strapdown (include sub-modules):
+
+```
+git clone --recurse-submodules https://github.com/chuckhoupt/autoindex_strapdown.git
+```
+
+Then adjust the htaccess directives to point at local URLs for the Javascript, CSS and icons.
+Add the extra conf option `strapdown` to self-host Strapdown. I.e.:
 
 `conf = {theme: 'bootstrap', title: '', strapdown: '/sd/strapdown.js'}`
 
